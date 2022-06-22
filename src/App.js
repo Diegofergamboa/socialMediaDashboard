@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './globals.css';
 import { Header } from './header';
 import { TopCardList } from './top-card-list';
 
