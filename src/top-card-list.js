@@ -8,7 +8,7 @@ const cardListData = [
         id: 1 ,
         followers: 1453 ,
         todayFollowers: 15 ,
-        icon: '../public/assets/icon-facebook.svg' ,
+        icon: 'assets/icon-facebook.svg' ,
         name: 'facebook' ,
     },
     {
