@@ -1,20 +1,20 @@
 import React from "react";
 import './card.css';
 
-function Card(props) {
+function Card({ username , followers , icon , todayFollowers }) {
     return (
         <article className="card facebook">
         <p className="card-title">
-            <img src="images/icon-facebook.svg" alt=""/>
-            {props.username}
+            <img src={icon} alt="Logo"/>
+            {username}
         </p>
         <p className="card-followers">
-            <span className="card-followers-number">{props.followers}</span>
+            <span className="card-followers-number">{followers}</span>
             <span className="card-followers-title">Followers</span>
         </p>
         <p className="card-today">
-            <img src="images/icon-up.svg" alt=""/>
-            12 Today
+            <img src='../public/images/icon-up.svg' alt=""/>
+            {todayFollowers} Today
         </p>
         </article>
     );

@@ -8,25 +8,28 @@ const cardListData = [
         id: 1 ,
         followers: 1453 ,
         todayFollowers: 15 ,
-        icon: './'
+        icon: '../public/images/favicon-32x32.png' ,
     },
     {
         username: '@PepitoPerez',
         id: 2 ,
         followers: 143 ,
         todayFollowers: 12 ,
+        icon: './public/images/icon-instagram.svg' ,
     },
     {
         username: '@DiegoOrtiz',
         id: 3 ,
         followers: 14530 ,
         todayFollowers: 62 ,
+        icon: './public/images/icon-twitter.svg' ,
     },
     {
         username: '@JavaScriptRamirez',
         id: 4 ,
         followers: 7453 ,
         todayFollowers: 90 ,
+        icon: 'public/images/icon-youtube.svg' ,
     },
 ];
 
@@ -41,7 +44,7 @@ function TopCardList() {
         <div className="wrapper">
             <div className="grid">
                 {
-                    cardListData.map(({username, id, followers}) => (<Card key={id} username={username} followers={followers}/>))
+                    cardListData.map((cardData) => <Card key={cardData.id} {...cardData} />)
                 }
             </div>
     </div>
