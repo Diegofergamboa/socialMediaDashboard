@@ -7,9 +7,9 @@ import './globals.css';
 const cardSmallList = [
     {
         key: 1 ,
+        icon: 'assets/icon-facebook.svg' , 
         pageViews: '87' ,
         growth: 3 , 
-        icon: 'assets/icon-facebook.svg' , 
     } ,
     {
         key: 2 ,
@@ -36,14 +36,16 @@ function Overview () {
         <section className="overview">
             <div className="wrapper">
             <h2>Overview - Today</h2>
-            <div class="grid">
+            <div className="grid">
                 {
-                    cardSmallList.map ((card) => {
+                    cardSmallList.map (({ icon , pageViews, growth, key}) => 
                         <CardSmall
-                            key={card.key}
-                            {...cardSmallList}
+                            key={key}
+                            growth={growth}
+                            pageViews={pageViews}
+                            icon={icon}
                         />
-                    })
+                    )
                 }
             </div>
             </div>
