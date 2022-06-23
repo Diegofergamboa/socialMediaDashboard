@@ -8,28 +8,28 @@ const cardListData = [
         id: 1 ,
         followers: 1453 ,
         todayFollowers: 15 ,
-        icon: '../public/images/favicon-32x32.png' ,
+        icon: '../assets/icon-facebook.svg' ,
     },
     {
         username: '@PepitoPerez',
         id: 2 ,
         followers: 143 ,
         todayFollowers: 12 ,
-        icon: './public/images/icon-instagram.svg' ,
+        icon: '../assets/icon-instagram.svg' ,
     },
     {
         username: '@DiegoOrtiz',
         id: 3 ,
         followers: 14530 ,
         todayFollowers: 62 ,
-        icon: './public/images/icon-twitter.svg' ,
+        icon: '../assets/icon-twitter.svg' ,
     },
     {
         username: '@JavaScriptRamirez',
         id: 4 ,
         followers: 7453 ,
         todayFollowers: 90 ,
-        icon: 'public/images/icon-youtube.svg' ,
+        icon: '../assets/icon-youtube.svg' ,
     },
 ];
 
