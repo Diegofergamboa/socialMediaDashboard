@@ -1,16 +1,3 @@
-@media screen and (min-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .header-total {
-    border: none;
-  }
-  .header-grid {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-  }
-}
-
 .is-dark-mode {
   --cardGray: #252b43;
   --baseBackground: #1d2029;
