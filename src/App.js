@@ -15,15 +15,15 @@ function App() {
       setChecked(mq.matches)
   }
 
-  useEffect(() => {
-      const mq = window.matchMedia('(prefers-color-scheme: dark)')
-      mq.addListener(changeMedia)
-      setDarkMode(mq.matches)
-      setChecked(mq.matches)
-      return () => {
-          mq.removeListener(changeMedia)
-      }
-  }, [])
+  // useEffect(() => {
+  //     const mq = window.matchMedia('(prefers-color-scheme: dark)')
+  //     mq.addListener(changeMedia)
+  //     setDarkMode(mq.matches)
+  //     setChecked(mq.matches)
+  //     return () => {
+  //         mq.removeListener(changeMedia)
+  //     }
+  // }, [])
 
   return (
     <React.Fragment>

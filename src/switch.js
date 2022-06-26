@@ -2,11 +2,11 @@ import React, { useRef } from "react";
 import './switch.css';
 
 function Switch() {
-    const ref = useRef(null)
-    function handleChange() {
-        setChecked(ref.current.checked)
-        setDarkMode(ref.current.checked)
-    }
+    // const ref = useRef(null)
+    // function handleChange() {
+    //     setChecked(ref.current.checked)
+    //     setDarkMode(ref.current.checked)
+    // }
 
     return (
     <div className="dark-mode" >
