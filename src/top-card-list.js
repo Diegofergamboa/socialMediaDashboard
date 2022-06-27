@@ -37,10 +37,6 @@ const cardListData = [
 ];
 
 
-
-
-
-
 function TopCardList() {
     return (
         <section className="top-cards">
