@@ -3,6 +3,7 @@ import './globals.css';
 import './cardSmall.css';
 
 function CardSmall ({ growth , icon , pageViews }) {
+    
     return (
         <div className="card-small">
         <p className="card-small-views">Page Views</p>
