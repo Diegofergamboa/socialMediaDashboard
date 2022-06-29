@@ -6,14 +6,6 @@ import { Overview } from './overview';
 import Switch from './switch'
 
 function App() {
-
-  const [checked, setChecked] = React.useState(false);
-
-  const handleCheckbox = (event) => {
-      console.log('done')
-      const checked = event.target.checked;
-      return setChecked(checked);
-  };
   
   return (
     <React.Fragment>
