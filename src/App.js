@@ -7,23 +7,23 @@ import { Switch } from './switch'
 
 function App() {
 
-  const [checked, setChecked] = React.useState('');
+  
 
-
-  let valueClassName = '' ;
-  const setupMode = () => {
-    if (!checked ) {
-      valueClassName = 'is-dark-mode'
-    } else {
-      valueClassName = 'is-light-mode'
-    }
+  const handleEventChecked = (event) => {
+    console.log(event)
   }
+  // let valueClassName = 'is-light-mode';
+  // (!checked) ? valueClassName = 'is-dark-mode' : valueClassName = 'is-light-mode'
+
 
   return (
     <React.Fragment>
-      <main className={setupMode}>
+      <main className={''}>
       <Header>
-        <Switch />
+        <Switch 
+        
+          onChange={handleEventChecked}
+        />
       </Header>
       <TopCardList/>
       <Overview/>
