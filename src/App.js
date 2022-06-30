@@ -9,19 +9,21 @@ function App() {
 
   const [checked, setChecked] = React.useState('');
 
-  const handleEventChecked = (event) => {
-    setChecked(event.target.checked);
+
+  let valueClassName = '' ;
+  const setupMode = () => {
+    if (!checked ) {
+      valueClassName = 'is-dark-mode'
+    } else {
+      valueClassName = 'is-light-mode'
+    }
   }
 
   return (
     <React.Fragment>
-      <main className='mainClass'>
+      <main className={setupMode}>
       <Header>
-        <Switch
-          checked={checked}
-          setChecked={setChecked}
-          handleEventChecked={handleEventChecked}
-        />
+        <Switch />
       </Header>
       <TopCardList/>
       <Overview/>

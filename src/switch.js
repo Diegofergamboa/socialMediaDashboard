@@ -1,12 +1,14 @@
 import React from "react";
 import './switch.css';
 
-function Switch ( { 
-    checked,
-    setChecked,
-    handleEventChecked
-    } ) {
+function Switch ( { checked, setChecked}) {
+    
+    const [checked, setChecked] = React.useState('');
 
+    const handleEventChecked = (event) => {
+        setChecked(event.target.checked);
+    }
+    
     return (
     <div className="dark-mode">
         <p className="dark-mode-title">Dark Mode</p>
